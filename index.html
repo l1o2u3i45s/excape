@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>人格蝕錄</title>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--bootstrap-->
+    <script src="skrollr.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
+    <!--counter-->
+    <link href="countdowntimer/demo/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="countdowntimer/demo/css/demo.css" rel="stylesheet" />
+    <link href="fixed-positioning.css" rel="stylesheet" />
+
+    <link href="css/main.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <nav class="wrap" data-anchor-target="#content" data-200-top="opacity:0;" data-150-top="visibility:visible; top: -55px; opacity: 0.3;" data-100-top="opacity: 1; position: fixed; top: 0;">
+        <div class="container">
+            <div class="eleven columns last">
+                <ul> 
+                      <li><a class="nav-link" data-menu-top="3000" href="#movie">宣傳影片</a>
+                    </li>
+                    <li><a class="nav-link" data-menu-top="5000" href="#stroy">背景故事</a>
+                    </li>
+                    <li><a class="nav-link" data-menu-top="9000" href="#reservation">預約系統</a>
+                    </li>
+                    <li><a class="nav-link " data-menu-top="11000" href="#team">團隊介紹</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="skrollr-body">
+        <header>
+            <img src="img/logoWhite.png" class="img-responsive">
+        </header>
+        <div id="content">
+
+            <div id="intro" data-0="opacity:1;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
+            </div>
+            <div id="transform" data-500="transform:scale(0) rotate(0deg);" data-1000="transform:scale(1) rotate(1440deg);opacity:1;" data-1600="" data-1700="transform:scale(5) rotate(3240deg);opacity:0;">
+
+                <h1>展覽倒數時間</h1>
+                <div class="countdown">
+                    <div class="clock row">
+                        <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+                            <div class="wrap">
+                                <div class="inner">
+                                    <div id="canvas-days" class="clock-canvas"></div>
+                                    <div class="text">
+                                        <p class="val">0</p>
+                                        <p class="type-days type-time">DAYS</p>
+                                    </div>
+                                    <!-- /.text -->
+                                </div>
+                                <!-- /.inner -->
+                            </div>
+                            <!-- /.wrap -->
+                        </div>
+                        <!-- /.clock-item -->
+                        <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+                            <div class="wrap">
+                                <div class="inner">
+                                    <div id="canvas-hours" class="clock-canvas"></div>
+                                    <div class="text">
+                                        <p class="val">0</p>
+                                        <p class="type-hours type-time">HOURS</p>
+                                    </div>
+                                    <!-- /.text -->
+                                </div>
+                                <!-- /.inner -->
+                            </div>
+                            <!-- /.wrap -->
+                        </div>
+                        <!-- /.clock-item -->
+                        <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+                            <div class="wrap">
+                                <div class="inner">
+                                    <div id="canvas-minutes" class="clock-canvas"></div>
+                                    <div class="text">
+                                        <p class="val">0</p>
+                                        <p class="type-minutes type-time">MINUTES</p>
+                                    </div>
+                                    <!-- /.text -->
+                                </div>
+                                <!-- /.inner -->
+                            </div>
+                            <!-- /.wrap -->
+                        </div>
+                        <!-- /.clock-item -->
+                        <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+                            <div class="wrap">
+                                <div class="inner">
+                                    <div id="canvas-seconds" class="clock-canvas"></div>
+                                    <div class="text">
+                                        <p class="val">0</p>
+                                        <p class="type-seconds type-time">SECONDS</p>
+                                    </div>
+                                    <!-- /.text -->
+                                </div>
+                                <!-- /.inner -->
+                            </div>
+                            <!-- /.wrap -->
+                        </div>
+                        <!-- /.clock-item -->
+                    </div>
+                    <!-- /.clock -->
+                </div>
+                <!-- /.countdown-wrapper -->
+                <h4>2018/04/30~2018/05/05</h4>
+            </div>
+            <div id="movie">
+                <div id="properties" class="properties" data-1700="top:100%;" data-2200="top:0%;" data-3000="display:block;" data-3700="top:-100%;display:none;">
+                     <nav class="wrap" data-anchor-target="#content" data-200-top="opacity:0;" data-150-top="visibility:visible; top: -55px; opacity: 0.3;" data-100-top="opacity: 1; position: fixed; top: 0;">
+        <div class="container">
+            <div class="eleven columns last">
+                <ul> 
+                      <li><a class="nav-link" data-menu-top="3000" href="#movie">宣傳影片</a>
+                    </li>
+                    <li><a class="nav-link" data-menu-top="5000" href="#stroy">背景故事</a>
+                    </li>
+                    <li><a class="nav-link" data-menu-top="9000" href="#reservation">預約系統</a>
+                    </li>
+                    <li><a class="nav-link " data-menu-top="11000" href="#team">團隊介紹</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+                    <h1>宣傳影片</h1>
+                    <iframe id="myVideo" src="https://www.youtube.com/watch?v=3CexZ19H8rs" frameborder="0"  ></iframe>
+                </div>
+            </div>
+            <div id="stroy">
+                <div id="properties" data-3700="top:100%;" data-4200="top:0%;" data-5000="display:block;" data-5700="top:-100%;display:none;">
+                    <h1>故事背景</h1>
+                    <p>
+                        在發生校園殺人事件後，張世偉被捕關進精神病院接受治療。
+            <br>
+                        陳慧文是張世偉的主治醫生，經診斷後發現，導致張世偉失控的原因是「夢魘性人格障礙」的精神疾病。
+            <br>
+                        而治療期間陳醫生了解到張世偉的身世背景後非常同情張世偉，所以很希望能幫助張世偉走出這個疾病。
+            <br>
+                        而漸漸的張世偉也開始對陳醫生產生信賴，並吐露出自己的恐懼以及希望自己能夠不再失控。
+            <br>
+                        然而某天張世偉突然又發作，但這次不僅傷害別人還傷害自己，費了一般功夫後被綁起來並關在隔離病房。
+            <br>
+                        於是陳醫生決定冒著風險利用「Circe」（瑟西）這個精神控制裝置來幫助張世偉解除這個現狀，
+            <br>
+                        但是進入他人的精神世界是有風險的，所以玩家將會扮演陳醫生，在有限的時間內幫助張世偉逃離他的心魔。
+                    </p>
+                </div>
+            </div>
+            <div id="character">
+                <div id="properties" data-5700="top:100%;" data-6200="top:0%;" data-7000="display:block;" data-7700="top:-100%;display:none;">
+                   <nav class="wrap" data-anchor-target="#content" data-200-top="opacity:0;" data-150-top="visibility:visible; top: -55px; opacity: 0.3;" data-100-top="opacity: 1; position: fixed; top: 0;">
+        <div class="container">
+            <div class="eleven columns last">
+                <ul> 
+                      <li><a class="nav-link" data-menu-top="3000" href="#movie">宣傳影片</a>
+                    </li>
+                    <li><a class="nav-link" data-menu-top="5000" href="#stroy">背景故事</a>
+                    </li>
+                    <li><a class="nav-link" data-menu-top="9000" href="#reservation">預約系統</a>
+                    </li>
+                    <li><a class="nav-link " data-menu-top="11000" href="#team">團隊介紹</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+                    <h1>角色設定</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                            <h2>陳慧文</h2>
+                            <p>精神科醫生，是張世偉的主治醫生</p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-md-6 col-sm-12">
+                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                            <h2>張世偉</h2>
+                            <p>患有「夢魘性人格障礙」的精神病患者</p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                    </div>
+                </div>
+            </div>
+            <div id="reservation">
+                <div id="properties" data-7700="top:100%;" data-8200="top:0%;" data-9000="display:block;" data-9700="top:-100%;display:none;">
+                     <nav class="wrap" data-anchor-target="#content" data-200-top="opacity:0;" data-150-top="visibility:visible; top: -55px; opacity: 0.3;" data-100-top="opacity: 1; position: fixed; top: 0;">
+        <div class="container">
+            <div class="eleven columns last">
+                <ul> 
+                      <li><a class="nav-link" data-menu-top="3000" href="#movie">宣傳影片</a>
+                    </li>
+                    <li><a class="nav-link" data-menu-top="5000" href="#stroy">背景故事</a>
+                    </li>
+                    <li><a class="nav-link" data-menu-top="9000" href="#reservation">預約系統</a>
+                    </li>
+                    <li><a class="nav-link " data-menu-top="11000" href="#team">團隊介紹</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+                    <h1>線上預約</h1>
+                    <div id="OnlineDating">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>0900</th>
+                                    <th>1000</th>
+                                    <th>1100</th>
+                                    <th>1200</th>
+                                    <th>1300</th>
+                                    <th>1400</th>
+                                    <th>1500</th>
+                                    <th>1600</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">4/30</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">5/1</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5/2</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5/3</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5/4</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Modal -->
+
+
+                </div>
+            </div>
+            <div id="team">
+                <div id="properties" data-9700="top:100%;" data-10200="top:0%;" data-11000="display:block;" data-end="top:-100%;display:none;">
+                    <nav class="wrap" data-anchor-target="#content" data-200-top="opacity:0;" data-150-top="visibility:visible; top: -55px; opacity: 0.3;" data-100-top="opacity: 1; position: fixed; top: 0;">
+        <div class="container">
+            <div class="eleven columns last">
+                <ul> 
+                      <li><a class="nav-link" data-menu-top="3000" href="#movie">宣傳影片</a>
+                    </li>
+                    <li><a class="nav-link" data-menu-top="5000" href="#stroy">背景故事</a>
+                    </li>
+                    <li><a class="nav-link" data-menu-top="9000" href="#reservation">預約系統</a>
+                    </li>
+                    <li><a class="nav-link " data-menu-top="11000" href="#team">團隊介紹</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+                    <h1>團隊介紹</h1>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                            <h3>陳品蓉</h3>
+                            <p>程式組</p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-md-3 col-sm-12">
+                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                            <h3>葉佳臻</h3>
+                            <p>程式組</p>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                            <h3>陳昱如</h3>
+                            <p>程式組</p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                         <div class="col-md-3 col-sm-12">
+                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                            <h3>朱聖智</h3>
+                            <p>影片組</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                            <h3>潘珈忻</h3>
+                            <p>美術組</p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-md-4 col-sm-12">
+                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                            <h3>梁惠雯</h3>
+                            <p>美術組</p>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                            <h3>廖育麟</h3>
+                            <p>美術組</p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="countdowntimer/demo/js/kinetic.js"></script>
+    <script src="countdowntimer/jquery.final-countdown.js"></script>
+    <script src="countdown.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: {
+                WTF: Math.random,
+                inverted: function (p) {
+                    return 1 - p;
+                }
+            }
+        });
+        
+        
+</script>
+    <script src="skrollmenu/skrollr.menu.js"></script>
+    <script src="skrollmenu/skrollr.menu.min.js"></script>
+    <script type="text/javascript">
+        setTimeout(function () {
+            var s = skrollr.init({
+                forceHeight: false
+            });
+
+            skrollr.menu.init(s, {
+                change: function (hash, top) {
+                    console.log(hash, top);
+                }
+            });
+        }, 500);
+    </script>
+</body>
+
+</html>
